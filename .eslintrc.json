@@ -7,7 +7,9 @@
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
         "airbnb",
-        "react-app"
+        "react-app",
+        "prettier",
+        "prettier/react"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -23,11 +25,17 @@
         "react-hooks/exhaustive-deps": "warn",
         "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
         "import/prefer-default-export": "off",
-        "camelcase": "off",
-        "indent": ["warn", 4],
-        "react/jsx-indent": [2, 4],
-        "@typescript-eslint/ban-types": "off",
+        "camelcase": 1,
         "no-use-before-define": "off",
+        "@typescript-eslint/ban-types": "off",
+        "@typescript-eslint/no-empty-function": [
+            "error",
+            { "allow": ["arrowFunctions"] }
+        ],
+        // "@typescript-eslint/explicit-function-return-type": [
+        //     "error",
+        //     { "allowExpression": true }
+        // ],
         "import/extensions": [
             "error",
             "ignorePackages",
