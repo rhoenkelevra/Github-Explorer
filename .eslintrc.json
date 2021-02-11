@@ -21,9 +21,17 @@
     },
     "plugins": ["react", "react-hooks", "@typescript-eslint"],
     "rules": {
+        "react/jsx-one-expression-per-line": "off",
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
         "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+        "react/self-closing-comp": [
+            "off",
+            {
+                "component": true,
+                "html": true
+            }
+        ],
         "import/prefer-default-export": "off",
         "camelcase": 1,
         "no-use-before-define": "off",

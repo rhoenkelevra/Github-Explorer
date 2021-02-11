@@ -8,7 +8,8 @@ import Repository from '../pages/Repository';
 const Routes: React.FC = () => (
     <Switch>
         <Route path="/" exact component={Dashboard} />
-        <Route path="/Repository" component={Repository} />
+        // the /:repo+ means that I want to finde everything after the /
+        <Route path="/repositories/:repository+" component={Repository} />
     </Switch>
 );
 
